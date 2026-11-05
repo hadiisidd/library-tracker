@@ -4,6 +4,7 @@ A command-line program for tracking library books.
 
 ## Features
 
-- (none yet)
+- Add books with a title and author while preventing duplicates.
 
 ## Contributors
+Abdul Hadi
