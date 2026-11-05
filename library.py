@@ -8,6 +8,18 @@ def show_menu():
     print("\n=== Library Tracker ===")
     print("0. Exit")
 
+def add_book():
+    title = input("Title: ")
+    author = input("Author: ")
+
+    if title in books:
+        print(f'"{title}" is already in the library.')
+    else:
+        books[title] = {
+            "author": author,
+            "available": True
+        }
+        print(f'Added "{title}".')
 
 def main():
     while True:
