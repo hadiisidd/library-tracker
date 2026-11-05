@@ -6,6 +6,7 @@ books = {}  # title -> {"author": str, "available": bool}
 
 def show_menu():
     print("\n=== Library Tracker ===")
+    print("1. Add book")
     print("0. Exit")
 
 def add_book():
@@ -29,6 +30,8 @@ def main():
         if choice == "0":
             print("Goodbye!")
             break
+        elif choice == "1":
+            add_book()
         else:
             print("Invalid option.")
 
